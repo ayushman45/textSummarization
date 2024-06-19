@@ -39,7 +39,7 @@ def check_model():
         return jsonify({'error': str(e)})
 
 # Route to check if the server is running
-@app.route('/check_server', methods=['GET'])
+@app.route('/', methods=['GET'])
 def check_server():
     return "Server is running."
 
